@@ -13,7 +13,7 @@ import org.reactivestreams.Publisher;
 public class StreamController {
 
 	@Inject
-	@Channel("my-internal-data-stream")
+	@Channel("internal-test")
 	Publisher<String> myDataStream;
 
 	@GET

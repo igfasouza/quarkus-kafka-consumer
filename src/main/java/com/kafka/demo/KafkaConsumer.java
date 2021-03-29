@@ -12,7 +12,7 @@ import io.smallrye.reactive.messaging.kafka.IncomingKafkaRecordMetadata;
 public class KafkaConsumer {
 
     @Incoming("mytopic-subscriber")
-    @Outgoing("my-internal-data-stream")
+    @Outgoing("internal-test")
     @Broadcast
     public String process(Message<String> incoming) {
     	String key = getKey(incoming);
